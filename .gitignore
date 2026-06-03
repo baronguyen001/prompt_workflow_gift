@@ -1,0 +1,5 @@
+# Local only — KHÔNG push lên GitHub public (chứa email cá nhân / secrets)
+apps-script/
+*.local
+.DS_Store
+Thumbs.db

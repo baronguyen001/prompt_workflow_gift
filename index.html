@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nhận miễn phí: Bộ 20 Prompt + 5 Trợ Lý Claude — Baro Nguyen</title>
+<meta name="description" content="Nhập email để nhận ngay Bộ 20 Prompt + 5 Trợ Lý Claude cho công việc — đúng bộ mình dùng để giao 80% việc lặp cho AI mỗi ngày.">
+<!-- Open Graph (share đẹp trên FB/Zalo) -->
+<meta property="og:title" content="Bộ 20 Prompt + 5 Trợ Lý Claude cho công việc">
+<meta property="og:description" content="Nhập email nhận miễn phí — copy về dùng ngay.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1B2A4A;--navy2:#142038;--red:#E8552D;--ink:#1f2733;--muted:#5b6676;--bg:#f4f5f7;--card:#ffffff;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Be Vietnam Pro",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:600px;margin:0 auto;padding:0 20px}
+
+  header{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:46px 0 40px;text-align:center}
+  .pill{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:.74rem;padding:6px 13px;border-radius:999px;letter-spacing:.6px;text-transform:uppercase}
+  header h1{font-size:1.7rem;font-weight:800;letter-spacing:-.5px;margin:16px 0 8px}
+  header h1 .hl{color:#ff8a5c}
+  header .sub{color:#c8d2e4;font-weight:600;max-width:440px;margin:0 auto}
+  .byline{margin-top:14px;font-size:.84rem;color:#9fb0cc}
+  .byline a{color:#ff8a5c;text-decoration:none;font-weight:600}
+
+  .card{background:var(--card);border-radius:18px;box-shadow:0 10px 30px rgba(20,32,56,.10);margin:-26px auto 24px;padding:24px 22px}
+  .cover{display:block;width:100%;max-width:280px;margin:0 auto 20px;border-radius:10px;box-shadow:0 6px 20px rgba(20,32,56,.18)}
+  ul.benefits{list-style:none;margin:0 0 22px}
+  ul.benefits li{padding:8px 0 8px 30px;position:relative;font-weight:600}
+  ul.benefits li::before{content:"✓";position:absolute;left:0;top:8px;color:#fff;background:var(--red);width:20px;height:20px;border-radius:50%;font-size:.72rem;display:flex;align-items:center;justify-content:center;font-weight:800}
+
+  .formbox{background:#f7f9fc;border:1px solid #e6eaf1;border-radius:14px;padding:18px}
+  .formbox label{font-size:.85rem;color:var(--muted);font-weight:600}
+  .formbox input[type=email]{width:100%;padding:13px 14px;border:1px solid #cfd6e2;border-radius:10px;font-size:1rem;font-family:inherit;margin:8px 0 12px}
+  .formbox button{width:100%;padding:14px;border:0;border-radius:10px;background:var(--red);color:#fff;font-size:1.02rem;font-weight:700;font-family:inherit;cursor:pointer;transition:.15s}
+  .formbox button:hover{background:#cf4621}
+  .note{font-size:.76rem;color:#8a94a4;text-align:center;margin-top:10px}
+
+  footer{text-align:center;color:#9aa3b2;font-size:.8rem;padding:26px 0 40px}
+  footer a{color:var(--muted);font-weight:600;text-decoration:none}
+  footer a:hover{color:var(--red)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="pill">🎁 Quà miễn phí</span>
+    <h1>Bộ <span class="hl">20 Prompt</span> + <span class="hl">5 Trợ Lý Claude</span> cho công việc</h1>
+    <div class="sub">Đúng bộ mình dùng để giao 80% việc lặp cho AI mỗi ngày — copy về dùng ngay.</div>
+    <div class="byline">by <a href="https://baronguyen001.github.io/home/">Baro Nguyen</a> · Career &amp; AI cho người Việt biết tiếng Nhật</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="card">
+    <img class="cover" src="cover.png" alt="Bìa: Bộ 20 Prompt + 5 Trợ Lý Claude" onerror="this.style.display='none'">
+    <ul class="benefits">
+      <li>20 prompt chia 5 nhóm: email (cả tiếng Nhật), research, tự động hóa, content, kế hoạch</li>
+      <li>5 “trợ lý” Claude cài 1 lần, dùng mãi</li>
+      <li>Kèm newsletter mỗi thứ Bảy: 1 câu chuyện thật + 1 tip AI cho công việc</li>
+    </ul>
+
+    <div class="formbox">
+      <!-- Form POST tới Google Apps Script → gửi email thật + đính kèm PDF + BCC. Setup: apps-script/SETUP.md -->
+      <form id="leadForm">
+        <label for="email">Nhập email để nhận bộ prompt ngay:</label>
+        <input type="email" id="email" name="email" placeholder="email@cuaban.com" required>
+        <button type="submit" id="leadBtn">Gửi cho tôi bộ prompt →</button>
+      </form>
+      <div class="note" id="leadMsg">Không spam. Hủy đăng ký bất cứ lúc nào.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  ← <a href="https://baronguyen001.github.io/home/">Về trang giới thiệu Baro Nguyen</a><br>
+  © 2026 Baro Nguyen · Career &amp; AI cho người Việt biết tiếng Nhật
+</footer>
+
+<script>
+(function(){
+  // 👉 Dán URL Web app Google Apps Script vào đây (hướng dẫn: apps-script/SETUP.md)
+  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx6ltX_0sL0liyYmnQ5OMH4Bm4QqhqUaJneDX0IU9HjScqAxnSQwz3ROk__bLOA-WkK/exec";
+
+  var form = document.getElementById('leadForm');
+  var btn  = document.getElementById('leadBtn');
+  var msg  = document.getElementById('leadMsg');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = (document.getElementById('email').value || '').trim();
+    if(!email) return;
+    if(!SCRIPT_URL || SCRIPT_URL.trim() === ''){
+      msg.innerHTML = '⚠️ Chưa cấu hình gửi email — xem <code>apps-script/SETUP.md</code>.';
+      return;
+    }
+    btn.disabled = true; btn.textContent = 'Đang gửi...';
+    fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: new URLSearchParams({ email: email })
+    }).then(function(){
+      form.style.display = 'none';
+      msg.innerHTML = '✅ Đã gửi! Kiểm tra hộp thư (kể cả mục <b>Quảng cáo / Spam</b>) trong vài phút nhé.';
+    }).catch(function(){
+      btn.disabled = false; btn.textContent = 'Gửi cho tôi bộ prompt →';
+      msg.textContent = 'Có lỗi, bạn thử lại giúp mình nhé.';
+    });
+  });
+})();
+</script>
+</body>
+</html>
