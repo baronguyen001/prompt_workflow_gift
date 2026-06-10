@@ -36,8 +36,14 @@ Toàn bộ hướng dẫn deploy script + dán `SCRIPT_URL`: xem **`apps-script/
 ---
 
 ## D. Cần thay trong `index.html`
-- [ ] `SCRIPT_URL` = URL web app Apps Script (xem `apps-script/SETUP.md`).
-- [x] `cover.png` đã có sẵn (ảnh bìa PDF).
+- [ ] `SCRIPT_URL` = URL web app Apps Script (xem `apps-script/SETUP.md`). Đây là endpoint POST công khai của Apps Script (`script.google.com/macros/s/.../exec`) — **không phải secret**, có thể để công khai. KHÔNG dán API key/token vào trang.
+- [x] `cover.png` đã có sẵn (ảnh bìa PDF) — cũng dùng làm `og:image` (URL tuyệt đối tới GitHub Pages). Nếu repo/đường dẫn Pages đổi, sửa các URL tuyệt đối trong khối `<meta property="og:*">` + `<link rel="canonical">`.
+
+## E. SEO / social / a11y (đã tích hợp sẵn — không cần chỉnh khi deploy thường)
+- `<title>` + meta description + `canonical` + `lang="vi"` + favicon (inline SVG, không cần file ngoài).
+- Open Graph (`og:image` = `cover.png`, kèm `og:image:width/height/alt`) + Twitter `summary_large_image` → share đẹp trên FB / Zalo / X.
+- `cover.png` có `width`/`height`/`loading="lazy"`/`decoding="async"` + `alt` (giảm layout shift, đạt WCAG AA).
+- Form có trạng thái success/error qua `aria-live`, skip-link, focus ring; có link **tải PDF trực tiếp** làm fallback.
 
 ## Git identity (quan trọng)
 - Repo này MUST dùng **baronguyen001**, KHÔNG dùng bao-mk1.
